@@ -227,6 +227,9 @@ return {
   ['@constructor'] = {
     fg = colors['typedef'];
   };
+  ['@punctuation'] = {
+    fg = colors['type'];
+  };
   ['@parameter'] = {
     fg = colors['identifier'];
   };
