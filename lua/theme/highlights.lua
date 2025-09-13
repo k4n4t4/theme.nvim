@@ -3,38 +3,56 @@ local colors = require("theme.colors")
 return {
   -- general
   ['Normal'] = {
-    bg = colors.background;
     fg = colors.foreground;
+    bg = colors.background;
   };
   ['NormalNC'] = {
-    bg = colors.inactive_background;
     fg = colors.inactive_foreground;
+    bg = colors.inactive_background;
   };
   ['EndOfBuffer'] = { fg = colors.end_of_buffer; };
   ['NonText'] = { fg = colors.non_text; };
   ['Whitespace'] = { fg = colors.whitespace; };
   ['SpecialKey'] = { fg = colors.special_key; };
+  ['Conceal'] = {
+    fg = colors.conceal_foreground;
+    bg = colors.conceal_background;
+  };
+  ['NormalFloat'] = {
+    fg = colors.normal_float_foreground;
+    bg = colors.normal_float_background;
+  };
+  ['FloatBorder'] = {
+    fg = colors.float_border_foreground;
+    bg = colors.float_border_background;
+  };
+  ['FloatTitle'] = { fg = colors.float_title; };
+  ['FloatFooter'] = { fg = colors.float_footer; };
 
   -- cursor, line, column
   ['Cursor'] = {
-    bg = colors.cursor_background;
     fg = colors.cursor_foreground;
+    bg = colors.cursor_background;
   };
   ['lCursor'] = {
-    bg = colors.cursor_background;
     fg = colors.cursor_foreground;
+    bg = colors.cursor_background;
   };
   ['CursorIM'] = {
-    bg = colors.cursor_background;
     fg = colors.cursor_foreground;
-  };
-  ['TermCursor'] = {
     bg = colors.cursor_background;
-    fg = colors.cursor_foreground;
   };
   ['CursorLine'] = { bg = colors.cursor_line; };
   ['CursorColumn'] = { bg = colors.cursor_column; };
   ['ColorColumn'] = { bg = colors.color_column; };
+  ['TermCursor'] = {
+    fg = colors.cursor_foreground;
+    bg = colors.cursor_background;
+  };
+  ['TermCursorNC'] = {
+    fg = colors.cursor_foreground;
+    bg = colors.cursor_background;
+  };
 
   -- line number, sign column
   ['LineNr'] = { fg = colors.line_number; };

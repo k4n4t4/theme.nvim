@@ -1,17 +1,25 @@
 return {
   -- general
-  background = "#101010";
   foreground = "#D0D0D0";
-  inactive_background = "#090909";
+  background = "#101010";
   inactive_foreground = "#A0A0A0";
+  inactive_background = "#090909";
   end_of_buffer = "#151515";
   non_text = "#151515";
   whitespace = "#151515";
   special_key = "#151515";
+  conceal_foreground = "#505050";
+  conceal_background = "#101010";
+  normal_float_foreground = "#D0D0D0";
+  normal_float_background = "#202020";
+  float_border_foreground = "#909090";
+  float_border_background = "#202020";
+  float_title = "#909090";
+  float_footer = "#909090";
 
   -- cursor, line, column
-  cursor_background = "#D0D0D0";
   cursor_foreground = "#101010";
+  cursor_background = "#D0D0D0";
   color_column = "#202020";
   cursor_line = "#1A1A1A";
   cursor_column = "#1A1A1A";
