@@ -1,41 +1,67 @@
 return {
+  -- general
   background = "#101010";
   foreground = "#D0D0D0";
   inactive_background = "#090909";
   inactive_foreground = "#A0A0A0";
-
   end_of_buffer = "#151515";
+  non_text = "#151515";
+  whitespace = "#151515";
+  special_key = "#151515";
 
+  -- cursor, line, column
+  cursor_background = "#D0D0D0";
+  cursor_foreground = "#101010";
   color_column = "#202020";
-
   cursor_line = "#1A1A1A";
   cursor_column = "#1A1A1A";
 
+  -- line number, sign column
   line_number = "#303030";
   cursor_line_number = "#505050";
-
   sign_column = "#202020";
+  fold_column = "#505050";
+  folded = "#303030";
 
-  vertical_split = "#202020";
-
-  window_separator = "#202020";
-
-  status_line = "#303030";
-  inactive_status_line = "#2A2A2A";
-
-  cursor_background = "#D0D0D0";
-  cursor_foreground = "#101010";
-
-  visual = "#2A2A2A";
+  -- search, visual
   search = "#404020";
   incremental_search = "#A0A020";
   match_paren = "#505050";
+  visual = "#2A2A2A";
 
+  -- ui, status
+  status_line = "#303030";
+  inactive_status_line = "#2A2A2A";
+  window_separator = "#202020";
+  vertical_split = "#202020";
+  tab_line = "#303030";
+  tab_line_selected = "#303030";
+  tab_line_fill = "#303030";
+  title = "#303030";
+
+  -- message
+  error_message = "#902020";
+  warning_message = "#909020";
+  more_message = "#707050";
+  mode_message = "#709050";
+  question = "#507040";
+
+  -- diff, git
+  diff_add = "#305030";
+  diff_change = "#303050";
+  diff_delete = "#503030";
+  diff_text = "#909090";
+  git_gutter_added = "#305030";
+  git_gutter_changed = "#303050";
+  git_gutter_delete = "#503030";
+
+  -- popupmenu
   popupmenu = "#303030";
   popupmenu_selected = "#404040";
   popupmenu_scrollbar = "#505050";
   popupmenu_thumb = "#606060";
 
+  --syntax
   ['comment'] = "#404040";
   ['constant'] = "#70C0D0";
   ['string'] = "#70D0A0";
