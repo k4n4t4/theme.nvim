@@ -230,6 +230,15 @@ return {
   ['@punctuation'] = {
     fg = colors['type'];
   };
+  ['@punctuation.delimiter'] = {
+    fg = colors['type'];
+  };
+  ['@punctuation.bracket'] = {
+    fg = colors['type'];
+  };
+  ['@punctuation.special'] = {
+    fg = colors['type'];
+  };
   ['@parameter'] = {
     fg = colors['identifier'];
   };
