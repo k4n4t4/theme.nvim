@@ -100,16 +100,16 @@ return {
   diagnostic_deprecated = "#A0A0A0";
   diagnostics_unnecessary = "#505050";
 
-  --syntax
+  -- syntax
   ['comment'] = "#606060";
-  ['constant'] = "#70C0D0";
-  ['string'] = "#70D0A0";
-  ['character'] = "#40E0A0";
-  ['number'] = "#70A0D0";
+  ['constant'] = "#7090A0";
+  ['string'] = "#70A070";
+  ['character'] = "#40A070";
+  ['number'] = "#3070A0";
   ['float'] = "#70A0D0";
-  ['boolean'] = "#D070A0";
-  ['identifier'] = "#A0C0D0";
-  ['function'] = "#D0A070";
+  ['boolean'] = "#A04070";
+  ['identifier'] = "#7090A0";
+  ['function'] = "#A07040";
   ['statement'] = "#D0A040";
   ['conditional'] = "#D0A040";
   ['repeat'] = "#D0A040";
