@@ -28,14 +28,20 @@ return {
   line_number = "#303030";
   cursor_line_number = "#505050";
   sign_column = "#202020";
-  fold_column = "#505050";
-  folded = "#303030";
+  fold_column_foreground = "#A0A0A0";
+  fold_column_background = "#202020";
+  folded_foreground = "#A0A0A0";
+  folded_background = "#202020";
 
   -- search, visual
   search = "#404020";
   incremental_search = "#A0A020";
   match_paren = "#505050";
   visual = "#2A2A2A";
+  substitude_foreground = "#101010";
+  substitude_background = "#D090D0";
+  quickfix_line_foreground = "#101010";
+  quickfix_line_background = "#9090D0";
 
   -- ui, status
   status_line = "#303030";
@@ -46,6 +52,10 @@ return {
   tab_line_selected = "#303030";
   tab_line_fill = "#303030";
   title = "#303030";
+  winbar_foreground = "#A0A0A0";
+  winbar_background = "#202020";
+  inactive_winbar_foreground = "#707070";
+  inactive_winbar_background = "#101010";
 
   -- message
   error_message = "#902020";
@@ -55,10 +65,15 @@ return {
   question = "#507040";
 
   -- diff, git
-  diff_add = "#305030";
-  diff_change = "#303050";
-  diff_delete = "#503030";
-  diff_text = "#909090";
+  diff_add_foreground = "#90C0A0";
+  diff_add_background = "#202030";
+  diff_change_foreground = "#9090C0";
+  diff_change_background = "#202030";
+  diff_delete_foreground = "#C09090";
+  diff_delete_background = "#302020";
+  diff_text_foreground = "#D0D0D0";
+  diff_text_background = "#404040";
+  diff_line = "#505050";
   git_gutter_added = "#305030";
   git_gutter_changed = "#303050";
   git_gutter_delete = "#503030";
@@ -68,13 +83,30 @@ return {
   popupmenu_selected = "#404040";
   popupmenu_scrollbar = "#505050";
   popupmenu_thumb = "#606060";
+  wild_menu = "#303030";
+
+  -- spellcheck
+  spell_bad = "#902020";
+  spell_cap = "#909020";
+  spell_rare = "#707050";
+  spell_local = "#507040";
+
+  -- diagnostics
+  diagnostic_error = "#D07070";
+  diagnostic_warning = "#D0A040";
+  diagnostic_information = "#70A0D0";
+  diagnostic_hint = "#70D0A0";
+  diagnostic_ok = "#70D070";
+  diagnostic_deprecated = "#A0A0A0";
+  diagnostics_unnecessary = "#505050";
 
   --syntax
-  ['comment'] = "#404040";
+  ['comment'] = "#606060";
   ['constant'] = "#70C0D0";
   ['string'] = "#70D0A0";
   ['character'] = "#40E0A0";
   ['number'] = "#70A0D0";
+  ['float'] = "#70A0D0";
   ['boolean'] = "#D070A0";
   ['identifier'] = "#A0C0D0";
   ['function'] = "#D0A070";
@@ -91,8 +123,17 @@ return {
   ['define'] = "#D0A0D0";
   ['macro'] = "#D0A0D0";
   ['type'] = "#A0C0C0";
+  ['typedef'] = "#D0A0A0";
   ['storageclass'] = "#A0C0C0";
   ['structure'] = "#D0A0C0";
-  ['typedef'] = "#D0A0A0";
+  ['special'] = "#D0A0A0";
+  ['special_char'] = "#D0A0A0";
   ['delimiter'] = "#C0C0C0";
+  ['tag'] = "#C0C0C0";
+  ['special_comment'] = "#C0C0C0";
+  ['debug'] = "#C0C0C0";
+  ['underlined'] = "#C0C0C0";
+  ['ignore'] = "#808080";
+  ['error'] = "#C09090";
+  ['todo'] = "#9090C0";
 }

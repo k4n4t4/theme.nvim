@@ -60,8 +60,14 @@ return {
   ['LineNrAbove'] = { link = 'LineNr'; };
   ['LineNrBelow'] = { link = 'LineNr'; };
   ['SignColumn'] = { fg = colors.sign_column; };
-  ['FoldColumn'] = { fg = colors.fold_column; };
-  ['Folded'] = { fg = colors.folded; };
+  ['FoldColumn'] = {
+    fg = colors.fold_column_foreground;
+    bg = colors.fold_column_background;
+  };
+  ['Folded'] = {
+    fg = colors.folded_foreground;
+    bg = colors.folded_background;
+  };
 
   -- search, visual
   ['Search'] = { bg = colors.search; };
@@ -70,6 +76,14 @@ return {
   ['MatchParen'] = { bg = colors.match_paren; };
   ['Visual'] = { bg = colors.visual; };
   ['VisualNOS'] = { bg = colors.visual; };
+  ['Substitude'] = {
+    fg = colors.substitude_foreground;
+    bg = colors.substitude_background;
+  };
+  ['QuickFixLine'] = {
+    fg = colors.quickfix_line_foreground;
+    bg = colors.quickfix_line_background;
+  };
 
   -- ui, status
   ['StatusLine'] = { bg = colors.status_line; };
@@ -82,6 +96,14 @@ return {
   ['TabLineSel'] = { bg = colors.tab_line_selected; };
   ['TabLineFill'] = { bg = colors.tab_line_fill; };
   ['Title'] = { bg = colors.title; };
+  ['WinBar'] = {
+    fg = colors.winbar_foreground;
+    bg = colors.winbar_background;
+  };
+  ['WinBarNC'] = {
+    fg = colors.inactive_winbar_foreground;
+    bg = colors.inactive_winbar_background;
+  };
 
   -- message
   ['ErrorMsg'] = { bg = colors.error_message; };
@@ -90,27 +112,59 @@ return {
   ['ModeMsg'] = { bg = colors.mode_message; };
   ['Question'] = { bg = colors.question; };
 
+  -- diff, git
+  ['DiffAdd'] = {
+    fg = colors.diff_add_foreground;
+    bg = colors.diff_add_background;
+  };
+  ['DiffChange'] = {
+    fg = colors.diff_change_foreground;
+    bg = colors.diff_change_background;
+  };
+  ['DiffDelete'] = {
+    fg = colors.diff_delete_foreground;
+    bg = colors.diff_delete_background;
+  };
+  ['DiffText'] = {
+    fg = colors.diff_text_foreground;
+    bg = colors.diff_text_background;
+  };
+  ['DiffOldFile'] = {
+    fg = colors.diff_old_file_foreground;
+    bg = colors.diff_old_file_background;
+  };
+  ['DiffNewFile'] = {
+    fg = colors.diff_new_file_foreground;
+    bg = colors.diff_new_file_background;
+  };
+  ['DiffLine'] = {
+    fg = colors.diff_line;
+  };
+  ['GitGutterAdd'] = { fg = colors.git_gutter_add; };
+  ['GitGutterChange'] = { fg = colors.git_gutter_change; };
+  ['GitGutterDelete'] = { fg = colors.git_gutter_delete; };
+
   -- popupmenu
   ['Pmenu'] = { bg = colors.popupmenu; };
   ['PmenuSel'] = { bg = colors.popupmenu_selected; };
   ['PmenuSbar'] = { bg = colors.popupmenu_scrollbar; };
   ['PmenuThumb'] = { bg = colors.popupmenu_thumb; };
-  ['WildMenu'] = { bg = colors.popupmenu; };
+  ['WildMenu'] = { bg = colors.wild_menu; };
 
   -- spellcheck
-  ['SpellBad'] = { undercurl = true; sp = colors.error_message; };
-  ['SpellCap'] = { undercurl = true; sp = colors.warning_message; };
-  ['SpellRare'] = { undercurl = true; sp = colors.mode_message; };
-  ['SpellLocal'] = { undercurl = true; sp = colors.more_message; };
+  ['SpellBad'] = { undercurl = true; sp = colors.spell_bad; };
+  ['SpellCap'] = { undercurl = true; sp = colors.spell_cap; };
+  ['SpellRare'] = { undercurl = true; sp = colors.spell_rare; };
+  ['SpellLocal'] = { undercurl = true; sp = colors.spell_local; };
 
-  -- diff, git
-  ['DiffAdd'] = { bg = colors.diff_add; };
-  ['DiffChange'] = { bg = colors.diff_change; };
-  ['DiffDelete'] = { bg = colors.diff_delete; };
-  ['DiffText'] = { bg = colors.diff_text; };
-  ['GitGutterAdd'] = { fg = colors.git_gutter_add; };
-  ['GitGutterChange'] = { fg = colors.git_gutter_change; };
-  ['GitGutterDelete'] = { fg = colors.git_gutter_delete; };
+  -- diagnostics
+  ['DiagnosticError'] = { fg = colors.diagnostics_error; };
+  ['DiagnosticWarn'] = { fg = colors.diagnostics_warn; };
+  ['DiagnosticInfo'] = { fg = colors.diagnostics_info; };
+  ['DiagnosticHint'] = { fg = colors.diagnostics_hint; };
+  ['DiagnosticOk'] = { fg = colors.diagnostics_ok; };
+  ['DiagnosticDeprecated'] = { fg = colors.diagnostics_deprecated; };
+  ['DiagnosticUnnecessary'] = { fg = colors.diagnostics_unnecessary; };
 
   -- syntax
   ['Comment'] = { fg = colors['comment']; };
@@ -118,6 +172,7 @@ return {
   ['String'] = { fg = colors['string']; };
   ['Character'] = { fg = colors['character']; };
   ['Number'] = { fg = colors['number']; };
+  ['Float'] = { fg = colors['float']; };
   ['Boolean'] = { fg = colors['boolean']; };
   ['Identifier'] = { fg = colors['identifier']; };
   ['Function'] = { fg = colors['function']; };
@@ -134,12 +189,21 @@ return {
   ['Define'] = { fg = colors['define']; };
   ['Macro'] = { fg = colors['macro']; };
   ['Type'] = { fg = colors['type']; };
+  ['Typedef'] = { fg = colors['typedef']; };
   ['StorageClass'] = { fg = colors['storageclass']; };
   ['Structure'] = { fg = colors['structure']; };
-  ['Typedef'] = { fg = colors['typedef']; };
+  ['Special'] = { fg = colors['special']; };
+  ['SpecialChar'] = { fg = colors['special_char']; };
   ['Delimiter'] = { fg = colors['delimiter']; };
+  ['Tag'] = { fg = colors['tag']; };
+  ['SpecialComment'] = { fg = colors['special_comment']; };
+  ['Debug'] = { fg = colors['debug']; };
+  ['Underlined'] = { fg = colors['underlined']; };
+  ['Ignore'] = { fg = colors['ignore']; };
+  ['Error'] = { fg = colors['error']; };
+  ['todo'] = { fg = colors['todo']; };
 
-
+  -- treesitter
   ['@variable'] = { fg = colors['identifier']; };
   ['@variable.builtin'] = { link = '@variable'; };
   ['@constant'] = { fg = colors['define']; };
