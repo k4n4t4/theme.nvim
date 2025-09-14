@@ -126,8 +126,8 @@ return {
   ['typedef'] = "#90A0A0";
   ['storageclass'] = "#609090";
   ['structure'] = "#A07090";
-  ['special'] = "#D0A0A0";
-  ['special_char'] = "#D0A0A0";
+  ['special'] = "#704070";
+  ['special_char'] = "#A03070";
   ['delimiter'] = "#C0C0C0";
   ['tag'] = "#C0C0C0";
   ['special_comment'] = "#C0C0C0";
