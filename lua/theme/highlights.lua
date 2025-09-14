@@ -201,7 +201,11 @@ return {
   ['Underlined'] = { fg = colors['underlined']; };
   ['Ignore'] = { fg = colors['ignore']; };
   ['Error'] = { fg = colors['error']; };
-  ['todo'] = { fg = colors['todo']; };
+  ['Todo'] = { fg = colors['todo']; };
+
+  -- other
+  ['Directory'] = { fg = colors['directory']; };
+  ['Changed'] = { fg = colors['changed']; };
 
   -- treesitter
   ['@comment'] = { fg = colors['comment']; };

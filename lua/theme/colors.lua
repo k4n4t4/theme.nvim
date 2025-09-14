@@ -136,4 +136,8 @@ return {
   ['ignore'] = "#808080";
   ['error'] = "#C09090";
   ['todo'] = "#9090C0";
+
+  -- other
+  ['directory'] = "#6070D0";
+  ['changed'] = "#6090D0";
 }
