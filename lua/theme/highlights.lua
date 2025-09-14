@@ -205,6 +205,8 @@ return {
 
   -- other
   ['Directory'] = { fg = colors['directory']; };
+  ['Added'] = { fg = colors['added']; };
+  ['Removed'] = { fg = colors['removed']; };
   ['Changed'] = { fg = colors['changed']; };
 
   -- treesitter

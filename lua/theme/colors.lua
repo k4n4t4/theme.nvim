@@ -139,5 +139,7 @@ return {
 
   -- other
   ['directory'] = "#6070D0";
+  ['added'] = "#60D090";
+  ['removed'] = "#D09060";
   ['changed'] = "#6090D0";
 }
