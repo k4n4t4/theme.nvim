@@ -246,7 +246,7 @@ return {
   ['@punctuation'] = { fg = colors['delimiter']; };
   ['@punctuation.delimiter'] = { fg = colors['delimiter']; };
   ['@punctuation.bracket'] = { fg = colors['delimiter']; };
-  ['@punctuation.special'] = { fg = colors['delimiter']; };
+  ['@punctuation.special'] = { fg = colors['special']; };
   ['@parameter'] = { fg = colors['identifier']; };
   ['@type'] = { fg = colors['type']; };
   ['@type.builtin'] = { fg = colors['type']; };
