@@ -218,7 +218,7 @@ return {
   ['@comment.note'] = { fg = colors['todo']; };
   ['@variable'] = { fg = colors['identifier']; };
   ['@variable.builtin'] = { fg = colors['special']; };
-  ['@variable.parameter'] = { fg = colors['identifier']; };
+  ['@variable.parameter'] = { fg = colors['constant']; };
   ['@variable.member'] = { fg = colors['structure']; };
   ['@module'] = { fg = colors['include']; };
   ['@constant'] = { fg = colors['constant']; };
