@@ -3,7 +3,7 @@ return {
   foreground = "#D0D0D0";
   background = "#101010";
   inactive_foreground = "#A0A0A0";
-  inactive_background = "#090909";
+  inactive_background = "#0E0E0E";
   end_of_buffer = "#151515";
   non_text = "#151515";
   whitespace = "#151515";
